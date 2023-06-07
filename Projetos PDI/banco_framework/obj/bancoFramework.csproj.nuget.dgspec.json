@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Framework\\Desktop\\Projetos PDI\\banco_framework\\bancoFramework.csproj": {}
+    "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\banco_framework\\bancoFramework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Framework\\Desktop\\Projetos PDI\\Application\\Application.csproj": {
+    "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Framework\\Desktop\\Projetos PDI\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Framework\\Desktop\\Projetos PDI\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Framework\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Framework\\Desktop\\Projetos PDI\\Application\\obj\\",
+        "outputPath": "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\Framework\\Desktop\\Projetos PDI\\banco_framework\\bancoFramework.csproj": {
+    "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\banco_framework\\bancoFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Framework\\Desktop\\Projetos PDI\\banco_framework\\bancoFramework.csproj",
+        "projectUniqueName": "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\banco_framework\\bancoFramework.csproj",
         "projectName": "bancoFramework",
-        "projectPath": "C:\\Users\\Framework\\Desktop\\Projetos PDI\\banco_framework\\bancoFramework.csproj",
+        "projectPath": "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\banco_framework\\bancoFramework.csproj",
         "packagesPath": "C:\\Users\\Framework\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Framework\\Desktop\\Projetos PDI\\banco_framework\\obj\\",
+        "outputPath": "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\banco_framework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -93,11 +93,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Framework\\Desktop\\Projetos PDI\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Framework\\Desktop\\Projetos PDI\\Application\\Application.csproj"
+              "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\Application\\Application.csproj"
               },
-              "C:\\Users\\Framework\\Desktop\\Projetos PDI\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Framework\\Desktop\\Projetos PDI\\Domain\\Domain.csproj"
+              "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\Domain\\Domain.csproj"
               }
             }
           }
@@ -131,14 +131,14 @@
         }
       }
     },
-    "C:\\Users\\Framework\\Desktop\\Projetos PDI\\Domain\\Domain.csproj": {
+    "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Framework\\Desktop\\Projetos PDI\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Framework\\Desktop\\Projetos PDI\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Framework\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Framework\\Desktop\\Projetos PDI\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
