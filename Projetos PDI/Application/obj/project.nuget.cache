@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OQU72D6lJBKaznZZG+4ZrP54hZkiQUkJfhdtUtdnjO3YWXEFbYPZRelz8adrQpSn4Y8nULLAfA5NoN6/ZcxBdw==",
+  "dgSpecHash": "8Nq9T8jXjoFPvylIFxxuU6i6YEGq+TFqG9o86BOroqC8+3fs03s+gFmXN5gg+fs1yNzXt5IRR3ay3SBK5cP+pA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Framework\\Desktop\\Projetos PDI\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\Application\\Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

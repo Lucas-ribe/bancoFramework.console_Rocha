@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Framework\\Desktop\\Projetos PDI\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\Framework\\Desktop\\Projetos PDI\\Application\\Application.csproj",
+      "projectPath": "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\Framework\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Framework\\Desktop\\Projetos PDI\\Application\\obj\\",
+      "outputPath": "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

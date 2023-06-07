@@ -1,4 +1,5 @@
-﻿using Domain.Model;
+﻿using Application;
+using Domain.Model;
 
 internal class Program
 {
@@ -8,49 +9,59 @@ internal class Program
         Console.WriteLine("Seja bem vindo ao banco Framework");
         Console.WriteLine("Por favor, identifique-se");
         Console.WriteLine("");
-        var pessoa = Identificacao();
+        var cliente = Identificacao();
 
         int opcao = 0;
+        var calculo = new Calculo();
 
         while (opcao != 3)
         {
-            opcao = Menu(pessoa, opcao);
+            opcao = Menu(cliente, opcao);
 
             switch (opcao)
             {
                 case 1:
                     Console.WriteLine("Depósito");
+                    var deposito = float.Parse(Console.ReadLine());
+                    cliente.Saldo = calculo.Soma(cliente.Saldo, deposito);
+                    Console.WriteLine($"Saldo atual é {cliente.Saldo.ToString("N2")}");
                     Console.ReadLine();
                     break;
                 case 2:
                     Console.WriteLine("Saque");
+                    var saque = float.Parse(Console.ReadLine());
+                    cliente.Saldo = calculo.Subtracao(cliente.Saldo, saque);
+                    Console.WriteLine($"Saldo atual é {cliente.Saldo.ToString("N2")}");
                     Console.ReadLine();
                     break;
             }
         }
     }
 
-    static Pessoa Identificacao()
+    static Cliente Identificacao()
     {
-        var pessoa = new Pessoa();
+        var cliente = new Cliente();
 
         Console.WriteLine("Seu número de identificação:");
-        pessoa.Id = int.Parse(Console.ReadLine());
+        cliente.Id = int.Parse(Console.ReadLine());
 
         Console.WriteLine("Seu nome:");
-        pessoa.Nome = Console.ReadLine();
+        cliente.Nome = Console.ReadLine();
 
         Console.WriteLine("Seu CPF:");
-        pessoa.Cpf = Console.ReadLine();
+        cliente.Cpf = Console.ReadLine();
+        
+        Console.WriteLine("Seu Saldo:");
+        cliente.Saldo = float.Parse(Console.ReadLine());
         Console.Clear();
        
-        return pessoa;
+        return cliente;
     }
 
-    static int Menu(Pessoa pessoa, int opcao)
+    static int Menu(Cliente cliente, int opcao)
     {
         Console.Clear();
-        Console.WriteLine($"Como posso ajudar {pessoa.Nome}?");
+        Console.WriteLine($"Como posso ajudar {cliente.Nome}?");
         Console.WriteLine($"1 - Depósito");
         Console.WriteLine($"2 - Saque");
         Console.WriteLine($"3 - Sair");
@@ -63,7 +74,8 @@ internal class Program
             opcao = int.Parse(key.KeyChar.ToString());
         else
             opcao = 0;
-
+        
         return opcao;
     }
+    
 }

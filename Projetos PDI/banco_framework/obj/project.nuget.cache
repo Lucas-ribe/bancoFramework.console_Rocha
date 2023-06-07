@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UnaaH/IQNR7VyKF8eLBip+7DgBeS8QzUIK757DCsEslydz2+e2pB+MNzJ3hqWd0Lq4kHPPxSM3U6ziUrMVqTIw==",
+  "dgSpecHash": "36dzOac3jEgjFxvckgXxqZ/vkoRR/ELm7XMAqmThiYOIofkqs6uyDpyyXkrLVvQ6pAMcg+ElhQQMCZhMThF1OQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Framework\\Desktop\\Projetos PDI\\banco_framework\\bancoFramework.csproj",
+  "projectFilePath": "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\banco_framework\\bancoFramework.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
