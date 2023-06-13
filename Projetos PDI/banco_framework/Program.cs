@@ -1,5 +1,6 @@
 ﻿using Application;
 using Domain.Model;
+using CpfCnpjLibrary;
 
 internal class Program
 {
@@ -42,19 +43,57 @@ internal class Program
     {
         var cliente = new Cliente();
 
-        Console.WriteLine("Seu número de identificação:");
-        cliente.Id = int.Parse(Console.ReadLine());
+        List<string> erros = new List<string>();
+        erros.Add(" ");
+        while (erros.Count() != 0)
+        {
+            erros.Clear();
 
-        Console.WriteLine("Seu nome:");
-        cliente.Nome = Console.ReadLine();
+            Console.WriteLine("Seu número de identificação:");
+            var id = Console.ReadLine();
+            if (!int.TryParse(id, out _))
+            {
+                erros.Add("Identificador não é válido");
+            }
+            else
+            {
+                cliente.Id = int.Parse(id);
+            }
 
-        Console.WriteLine("Seu CPF:");
-        cliente.Cpf = Console.ReadLine();
-        
-        Console.WriteLine("Seu Saldo:");
-        cliente.Saldo = float.Parse(Console.ReadLine());
-        Console.Clear();
-       
+            Console.WriteLine("Seu nome:");
+            cliente.Nome = Console.ReadLine();
+
+            Console.WriteLine("Seu CPF:");
+            cliente.Cpf = Console.ReadLine();
+            if (Cpf.Validar(cliente.Cpf).Equals(false))
+            {
+                erros.Add("CPF digitado não é válido");
+            }
+
+            Console.WriteLine("Seu Saldo:");
+            var saldo = Console.ReadLine();
+            if (!float.TryParse(saldo, out _))
+            {
+                erros.Add("Saldo não é válido");
+            }
+            else
+            {
+                cliente.Saldo = float.Parse(saldo);
+            }
+
+            Console.WriteLine();
+
+            if (erros.Count() > 0)
+            {
+                foreach (string mensagem in erros)
+                {
+                    Console.WriteLine(mensagem);
+                }
+                Console.ReadLine();
+            }
+
+            Console.Clear();
+        }
         return cliente;
     }
 
@@ -74,8 +113,8 @@ internal class Program
             opcao = int.Parse(key.KeyChar.ToString());
         else
             opcao = 0;
-        
+
         return opcao;
     }
-    
+
 }

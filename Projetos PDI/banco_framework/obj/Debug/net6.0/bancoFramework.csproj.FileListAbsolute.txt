@@ -38,3 +38,4 @@ C:\Users\Framework\Desktop\PDI\Projetos PDI\banco_framework\obj\Debug\net6.0\ref
 C:\Users\Framework\Desktop\PDI\Projetos PDI\banco_framework\obj\Debug\net6.0\bancoFramework.pdb
 C:\Users\Framework\Desktop\PDI\Projetos PDI\banco_framework\obj\Debug\net6.0\bancoFramework.genruntimeconfig.cache
 C:\Users\Framework\Desktop\PDI\Projetos PDI\banco_framework\obj\Debug\net6.0\ref\bancoFramework.dll
+C:\Users\Framework\Desktop\PDI\Projetos PDI\banco_framework\bin\Debug\net6.0\Library.dll
