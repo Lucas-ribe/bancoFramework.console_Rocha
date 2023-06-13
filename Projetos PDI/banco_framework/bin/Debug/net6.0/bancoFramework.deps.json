@@ -9,18 +9,33 @@
       "bancoFramework/1.0.0": {
         "dependencies": {
           "Application": "1.0.0",
+          "Cpf.Cnpj": "1.0.2",
           "Domain": "1.0.0"
         },
         "runtime": {
           "bancoFramework.dll": {}
         }
       },
+      "Cpf.Cnpj/1.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Library.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
+          }
+        }
+      },
       "Application/1.0.0": {
+        "dependencies": {
+          "Cpf.Cnpj": "1.0.2"
+        },
         "runtime": {
           "Application.dll": {}
         }
       },
       "Domain/1.0.0": {
+        "dependencies": {
+          "Cpf.Cnpj": "1.0.2"
+        },
         "runtime": {
           "Domain.dll": {}
         }
@@ -32,6 +47,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Cpf.Cnpj/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-h7CLzBwP8sDKLMhYiiU77pbSWTtgOk+UUwB1SLs+l93RSEzIov/6bH8H8YkZGCri9l+ETkzV6Qfxf1cahUfpzw==",
+      "path": "cpf.cnpj/1.0.2",
+      "hashPath": "cpf.cnpj.1.0.2.nupkg.sha512"
     },
     "Application/1.0.0": {
       "type": "project",

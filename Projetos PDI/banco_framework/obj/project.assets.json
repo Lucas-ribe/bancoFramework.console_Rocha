@@ -2,9 +2,21 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Cpf.Cnpj/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Library.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Library.dll": {}
+        }
+      },
       "Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Cpf.Cnpj": "1.0.2"
+        },
         "compile": {
           "bin/placeholder/Application.dll": {}
         },
@@ -15,6 +27,9 @@
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Cpf.Cnpj": "1.0.2"
+        },
         "compile": {
           "bin/placeholder/Domain.dll": {}
         },
@@ -25,6 +40,20 @@
     }
   },
   "libraries": {
+    "Cpf.Cnpj/1.0.2": {
+      "sha512": "h7CLzBwP8sDKLMhYiiU77pbSWTtgOk+UUwB1SLs+l93RSEzIov/6bH8H8YkZGCri9l+ETkzV6Qfxf1cahUfpzw==",
+      "type": "package",
+      "path": "cpf.cnpj/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README nuget.md",
+        "cpf.cnpj.1.0.2.nupkg.sha512",
+        "cpf.cnpj.nuspec",
+        "lib/netstandard2.0/Library.dll",
+        "logo.png"
+      ]
+    },
     "Application/1.0.0": {
       "type": "project",
       "path": "../Application/Application.csproj",
@@ -39,6 +68,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Application >= 1.0.0",
+      "Cpf.Cnpj >= 1.0.2",
       "Domain >= 1.0.0"
     ]
   },
@@ -93,6 +123,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "Cpf.Cnpj": {
+            "target": "Package",
+            "version": "[1.0.2, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

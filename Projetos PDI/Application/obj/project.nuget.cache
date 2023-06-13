@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8Nq9T8jXjoFPvylIFxxuU6i6YEGq+TFqG9o86BOroqC8+3fs03s+gFmXN5gg+fs1yNzXt5IRR3ay3SBK5cP+pA==",
+  "dgSpecHash": "5WWf4x+w7GJOKJfxhRHbbkPf0pMyrpY2nfK4yCBXayQHQWEnkED/icflIIcAmv8AjqarlVaBLXqgxd5EkH45Pw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Framework\\Desktop\\PDI\\Projetos PDI\\Application\\Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Framework\\.nuget\\packages\\cpf.cnpj\\1.0.2\\cpf.cnpj.1.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
