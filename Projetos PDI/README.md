@@ -1,4 +1,3 @@
-Meu primeiro projeto
 
 SCRIPT DB
 
