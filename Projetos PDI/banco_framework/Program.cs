@@ -1,17 +1,24 @@
 ﻿using Application;
 using Domain.Model;
 using CpfCnpjLibrary;
+using Repository;
+using Microsoft.Extensions.DependencyInjection;
 
 internal class Program
 {
-    private static void Main(string[] args)
+    private IClienteRepository _cliente;
+    public static void Main(string[] args)
     {
+        var serviceCollection = new ServiceCollection();
+        ConfigureServices(serviceCollection);
+        var serviceProvider = serviceCollection.BuildServiceProvider();
+        var clienteService = serviceProvider.GetService<IClienteRepository>();
         Console.Clear();
         Console.WriteLine("Seja bem vindo ao banco Framework");
         Console.WriteLine("Por favor, identifique-se");
         Console.WriteLine("");
-        var cliente = Identificacao();
-
+        var cliente = Identificacao(clienteService);
+        
         int opcao = 0;
         var calculo = new Calculo();
 
@@ -25,21 +32,27 @@ internal class Program
                     Console.WriteLine("Depósito");
                     var deposito = float.Parse(Console.ReadLine());
                     cliente.Saldo = calculo.Soma(cliente.Saldo, deposito);
-                    Console.WriteLine($"Saldo atual é {cliente.Saldo.ToString("N2")}");
+                    clienteService.Update(cliente);
+                    Console.WriteLine($"Saldo atual é {clienteService.Get(cliente.Id).Saldo.ToString("N2")}");
                     Console.ReadLine();
                     break;
                 case 2:
                     Console.WriteLine("Saque");
                     var saque = float.Parse(Console.ReadLine());
                     cliente.Saldo = calculo.Subtracao(cliente.Saldo, saque);
-                    Console.WriteLine($"Saldo atual é {cliente.Saldo.ToString("N2")}");
+                    clienteService.Update(cliente);
+                    Console.WriteLine($"Saldo atual é {clienteService.Get(cliente.Id).Saldo.ToString("N2")}");
                     Console.ReadLine();
                     break;
             }
         }
+        
     }
-
-    static Cliente Identificacao()
+    static void ConfigureServices(IServiceCollection services)
+    {
+        services.AddScoped<IClienteRepository, ClienteRepository>();
+    }
+    static Cliente Identificacao(IClienteRepository clienteService)
     {
         var cliente = new Cliente();
 
@@ -58,6 +71,10 @@ internal class Program
             else
             {
                 cliente.Id = int.Parse(id);
+
+                var client = clienteService.Get(cliente.Id);
+                if (client is not null)
+                    return client;
             }
 
             Console.WriteLine("Seu nome:");
@@ -91,6 +108,8 @@ internal class Program
                 }
                 Console.ReadLine();
             }
+            
+            clienteService.Insert(cliente);
 
             Console.Clear();
         }
